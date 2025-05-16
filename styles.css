@@ -1,1 +1,107 @@
+/* Set entire page background color using :root */
+:root {
+  --page-bg-color: rgb(135, 206, 235);
+}
+
+body {
+  background-color: var(--page-bg-color);
+  font-family: Arial, sans-serif; /* optional for nicer font */
+  margin: 20px;
+}
+
+/* Article with paragraphs */
+article p:first-child {
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+article p:nth-child(2) {
+  /* Standard text color (default) */
+  color: inherit;
+  padding: 10px;
+}
+
+article p:last-child {
+  color: red;
+  padding: 10px;
+}
+
+/* Unordered list with 5 items */
+ul li {
+  background-color: gray;
+  width: 50%;
+  padding: 10px;
+  list-style-type: none; /* optional to remove bullet */
+  margin: 5px 0;
+}
+
+/* Odd list items have white background */
+ul li:nth-child(odd) {
+  background-color: white;
+}
+
+/* First and last list items font size */
+ul li:first-child,
+ul li:last-child {
+  font-size: 22px;
+}
+
+/* Third-to-last item pink background */
+ul li:nth-last-child(3) {
+  background-color: pink !important;
+}
 /*  your css code here. If applicable */
+/* Set entire page background color using :root */
+:root {
+  --page-bg-color: rgb(135, 206, 235);
+}
+
+body {
+  background-color: var(--page-bg-color);
+  font-family: Arial, sans-serif; /* optional for nicer font */
+  margin: 20px;
+}
+
+/* Article with paragraphs */
+article p:first-child {
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+article p:nth-child(2) {
+  /* Standard text color (default) */
+  color: inherit;
+  padding: 10px;
+}
+
+article p:last-child {
+  color: red;
+  padding: 10px;
+}
+
+/* Unordered list with 5 items */
+ul li {
+  background-color: gray;
+  width: 50%;
+  padding: 10px;
+  list-style-type: none; /* optional to remove bullet */
+  margin: 5px 0;
+}
+
+/* Odd list items have white background */
+ul li:nth-child(odd) {
+  background-color: white;
+}
+
+/* First and last list items font size */
+ul li:first-child,
+ul li:last-child {
+  font-size: 22px;
+}
+
+/* Third-to-last item pink background */
+ul li:nth-last-child(3) {
+  background-color: pink !important;
+}
